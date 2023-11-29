@@ -1,0 +1,99 @@
+:root{
+    background-color: #127475;
+    border-color: #562c2c;
+    accent-color: #f5dfbb;
+}
+
+/* General styles */
+body {
+  
+    background-color: var(--background-color);
+    color: #f2542d;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+
+}
+
+p{
+    color: #f5dfbb;
+}
+
+header {
+    background-color: #562c2c;
+    color: #f5dfbb;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+secondGallery {
+    margin-left: 15%;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2542d;
+}
+
+img{
+    margin: 5% 0 5% 10%;
+    width: 25%;
+    height: 25%;
+    border: solid #562c2c;
+    border-radius: 5%;
+    border-width: 15px;
+}
+
+img:hover {
+    border: solid;
+    border-color: #f5dfbb;
+    border-width: 20px;
+}
+
+/* Target the link by its class */
+.contact {
+    color: #f5dfbb; /* Change the color to cream */
+    /* Other styles you may want to apply */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Adjust the color when the link is hovered over */
+  .contact:hover {
+    color: #f2542d; /* Change color when hovered */
+    /* Other styles for hover state */
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+    gap: 5%; /* Adjust the gap between columns */
+    margin: 10%
+  }
+  
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
