@@ -9,7 +9,7 @@ body {
   
     background-color: var(--background-color);
     color: #f2542d;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gill Sans;
     margin: 0%;
 
 }
@@ -17,12 +17,25 @@ body {
 /*Text colors*/
 p{
     color: #f5dfbb;
+    font-size: large;
+    font-family: Gill Sans;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 10% 10% 10%;
 }
+
+.instagram-icon {
+    font-size: 24px; /* Adjust the size of the icon */
+    color: #f5dfbb; /* Adjust the color of the icon */
+  }
 
 /*Header*/
 header {
     background-color: #562c2c;
     color: #f5dfbb;
+    font-family: Gill Sans;
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -32,23 +45,55 @@ header {
 
 }
 
+.header-photo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    object-fit: cover;
+    height: auto%;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.header-photo:hover{
+    border: none;
+}
+
+
 photo {
     display: flex;
     justify-content: center;
     align-items: space-between;
     flex-direction: column;
+    margin: 5%;
 
 }
 
-/*Second Line of Pictures*/
-secondGallery {
-    margin-left: 15%;
-}
+/* Create a grid container */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-template-rows: (auto);
+    gap: 10%; /* Gap between grid items */
+  }
+  
+  /* Style each grid item */
+  .grid-item {
+    background-color: #127475;
+    padding: 20px;
+    text-align: center;
+
+  }
+
 
 /* Navigation */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0 0 5% 0;
     margin: 0;
 }
 
@@ -65,9 +110,9 @@ nav ul li a {
 
 /*images*/
 img{
-    margin: 5% 0 5% 10%;
-    width: 25%;
-    height: 25%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     border: solid #562c2c;
     border-radius: 5%;
     border-width: 15px;
@@ -92,12 +137,19 @@ img:hover {
     
   }
 
-/*creates columns for contents*/
-  .container {
+  h2{
+    margin-left: 20%;
+  }
+
+  .bottom-container {
     display: grid;
+    justify-content: center;
+    align-items: top;
     grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
-    gap: 5%; /* Adjust the gap between columns */
-    margin: 10%
+    grid-template-rows: auto;
+    gap: 10%; /* Adjust the gap between columns */
+    padding: 0 0 0 5%;
+    
   }
   
 /* Responsive Styles for Mobile */
