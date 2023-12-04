@@ -122,9 +122,28 @@ img{
 
 img:hover {
     border: solid;
-    border-color: #f5dfbb;
+    border-color:  #f5dfbb;
     border-width: 20px;
 }
+
+.img::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  }
+
+  .img:hover::after {
+    opacity: 1;
+  }
 
 /* Target the link by its class */
 .contact {
