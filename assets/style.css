@@ -53,14 +53,16 @@ header {
     align-items: space-between;
     flex-direction: column;
     object-fit: cover;
-    height: auto%;
+    height: auto;
     width: 100%;
     border: none;
     border-radius: 0;
+    box-sizing: border-box;
 }
 
 .header-photo:hover{
-    border: none;
+    border: 10px solid #f5dfbb;
+    
 }
 
 
@@ -112,7 +114,7 @@ nav ul li a {
 img{
     margin: 0;
     width: 100%;
-    height: 100%;
+    
     border: solid #562c2c;
     border-radius: 5%;
     border-width: 15px;
